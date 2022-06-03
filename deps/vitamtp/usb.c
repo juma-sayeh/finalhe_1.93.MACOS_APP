@@ -30,7 +30,7 @@
 
 #include "ptp-pack.c"
 
-#include <libusb.h>
+#include </usr/local/Cellar/libusb/1.0.26/include/libusb-1.0/libusb.h>
 
 struct vita_device
 {

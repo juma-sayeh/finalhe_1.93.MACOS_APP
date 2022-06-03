@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /Users/jumasayeh/Downloads/finalhe-master
 if ! command -v brew &> /dev/null
 then
     read -p "Brew is not installed. Would you like to install it (y/n)?" answer

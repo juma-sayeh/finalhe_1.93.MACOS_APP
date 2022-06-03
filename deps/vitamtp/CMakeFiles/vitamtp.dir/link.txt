@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libvitamtp.a CMakeFiles/vitamtp.dir/datautils.c.o CMakeFiles/vitamtp.dir/device.c.o CMakeFiles/vitamtp.dir/ptp.c.o CMakeFiles/vitamtp.dir/usb.c.o CMakeFiles/vitamtp.dir/vitamtp.c.o CMakeFiles/vitamtp.dir/wireless.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libvitamtp.a

@@ -29,7 +29,6 @@
 #include <QFileInfo>
 #include <QDateTime>
 #include <QMutex>
-#include <QRandomGenerator>
 #include <QUrl>
 #include <QUdpSocket>
 #include <QtNetwork/QHostInfo>
@@ -175,7 +174,7 @@ public slots:
             .arg(broadcast_ok, uuid, "win", hostname)
             .arg(protocol_version, 8, 10, QChar('0'))
             .arg(CMA_REQUEST_PORT)
-            .arg(VITAMTP_WIRELESS_MAX_VERSION, 8, 10, QChar('0')).toUtf8());
+            .arg(VITAMTP_WIRELESS_MAX_VERSION, 8, 10, QChar('0')));
         reply.append('\0');
     }
     void setUnavailable() {
@@ -187,7 +186,7 @@ public slots:
             .arg(broadcast_unavailable, uuid, "win", hostname)
             .arg(protocol_version, 8, 10, QChar('0'))
             .arg(CMA_REQUEST_PORT)
-            .arg(VITAMTP_WIRELESS_MAX_VERSION, 8, 10, QChar('0')).toUtf8());
+            .arg(VITAMTP_WIRELESS_MAX_VERSION, 8, 10, QChar('0')));
         reply.append('\0');
     }
 
@@ -321,7 +320,6 @@ int deviceRegistered(const char *deviceid) {
 int generatePin(wireless_vita_info_t *info, int *p_err) {
     qDebug("Registration request from %s (MAC: %s)", info->name, info->mac_addr);
 
-    auto &randGen = *QRandomGenerator::global();
     tempOnlineId = info->name;
 
     QString staticPin = QSettings().value("staticPin").toString();
@@ -333,17 +331,17 @@ int generatePin(wireless_vita_info_t *info, int *p_err) {
         pin = staticPin.toInt(&ok);
 
         if (!ok) {
-            pin = randGen() % 10000 * 10000 | randGen() % 10000;
+            pin = rand() % 10000 * 10000 | rand() % 10000;
         }
     } else {
-        pin = randGen() % 10000 * 10000 | randGen() % 10000;
+        pin = rand() % 10000 * 10000 | rand() % 10000;
     }
 
     QTextStream out(stdout);
     out << "Your registration PIN for " << info->name << " is: ";
     out.setFieldWidth(8);
     out.setPadChar('0');
-    out << pin << Qt::endl;
+    out << pin << endl;
 
     qDebug("PIN: %08i", pin);
 
@@ -356,6 +354,8 @@ void VitaConn::process() {
     running = true;
     UdpBroadcast *broadcast = new UdpBroadcast(parent());
     clientThread = Worker::start(this, [this, broadcast](void*) {
+        QTime now = QTime::currentTime();
+        qsrand(now.msec());
         while (running) {
             connMutex.lock();
             if (currDev == nullptr) {
@@ -832,12 +832,12 @@ VitaConn::MetaInfo *VitaConn::metaAddFile(const QString &basePath, const QString
     minfo.path = relName;
     minfo.name = info.fileName();
     minfo.type = VITA_DIR_TYPE_MASK_REGULAR;
-    minfo.dateTimeModified = info.lastModified().toUTC().toSecsSinceEpoch();
+    minfo.dateTimeModified = info.lastModified().toUTC().toTime_t();
     if (isDir) {
         minfo.size = 0;
         minfo.dataType = Folder;
     } else {
-        minfo.dateTimeCreated = info.birthTime().toUTC().toSecsSinceEpoch();
+        minfo.dateTimeCreated = info.created().toUTC().toTime_t();
         minfo.size = info.size();
         minfo.dataType = App | File;
     }

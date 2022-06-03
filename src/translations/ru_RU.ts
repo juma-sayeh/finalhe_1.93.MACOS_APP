@@ -6,81 +6,79 @@
     <message>
         <location filename="../finalhe.cc" line="156"/>
         <source>Firmware %1</source>
-        <translation>Системное ПО %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="159"/>
         <source>-- Firmware update --</source>
-        <translation>-- Обновление ПО --</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="173"/>
         <source>-- Additional applications --</source>
-        <translation>-- Дополнительные приложения --</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="202"/>
         <location filename="../finalhe.cc" line="228"/>
         <source>Fimrware version is not supported by h-encore.</source>
-        <translation>Версия ПО не поддерживается</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="203"/>
         <location filename="../finalhe.cc" line="229"/>
         <source>Update to %1 first.</source>
-        <translation>Сначала обновите ПО до %1</translation>
-    </message>
-    <message>
-        <location filename="../finalhe.cc" line="206"/>
-        <location filename="../finalhe.cc" line="232"/>
-        <source>To update through USB:
-Put Update Package(.PUP) in this tool&apos;s folder and restart the tool</source>
-        <translation>Поместите пакет обновления (.PUP) в папку этой программы и перезапустите finalhe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="205"/>
         <location filename="../finalhe.cc" line="231"/>
         <source>On PS Vita:
 Settings -&gt; System Update -&gt; Update by Connecting to a PC</source>
-        <translation>На PS Vita:
-Настройки -&gt; Обновление системы -&gt; Обновить путем подключения к компьютеру</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../finalhe.cc" line="206"/>
+        <location filename="../finalhe.cc" line="232"/>
+        <source>To update through USB:
+Put Update Package(.PUP) in this tool&apos;s folder and restart the tool</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="263"/>
         <source>Click button to START!</source>
-        <translation>нажмите Начать!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="281"/>
         <source>Registering device: %1
 Input this PIN on PS Vita: %2</source>
-        <translation>Регистрация устройства: %1
-        	Введите этот PIN-код на PS Vita: %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="285"/>
         <source>Registered device.</source>
-        <translation>Устройство зарегистрировано</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cc" line="93"/>
         <source>WARNING</source>
-        <translation>Внимание!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cc" line="93"/>
         <source>Qcma is running, force close it now?</source>
-        <translation>QCMA в данный момент запущен, закрыть его принудительно?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cc" line="97"/>
         <source>ERROR</source>
-        <translation>Ошибка</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cc" line="97"/>
         <source>Unable to close Qcma, please close it manually and then restart this tool.</source>
-        <translation>Невозможно закрыть QCMA, закройте его вручную и перезапустите finalhe.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -88,12 +86,12 @@ Input this PIN on PS Vita: %2</source>
     <message>
         <location filename="../finalhe.ui" line="103"/>
         <source> Let&apos;s GO! </source>
-        <translation>Поехали!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.ui" line="122"/>
         <source>Trim h-encore to ~7MB</source>
-        <translation>Обрезать h-encore до ~7МБ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -101,47 +99,43 @@ Input this PIN on PS Vita: %2</source>
     <message>
         <location filename="../package.cc" line="62"/>
         <source>Launch Content Manager on PS Vita and connect to computer.</source>
-        <translation>Откройте Управление данными на PS Vita и подключите ее к компьютеру</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="126"/>
         <source>Downloading %1</source>
-        <translation>Загрузка %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="147"/>
         <source>Unpacking %1</source>
-        <translation>Распаковка %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="161"/>
         <location filename="../package.cc" line="173"/>
         <source>Failed to unpack %1</source>
-        <translation>Ошибка при распаковке %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="198"/>
         <source>Decompressing %1</source>
-        <translation>Сжатие %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="218"/>
         <source>Failed to decompress %1</source>
-        <translation>Ошибка при сжатии %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="340"/>
         <source>Verifying %1</source>
-        <translation>Проверка %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="369"/>
         <source>sha256sum mismatch! Please check your network.</source>
-        <translation>Несовпадение sha256sum! Проверьте подключение к интернету.</translation>
-    </message>
-    <message>
-        <source>Fetching backup key from cma.henkaku.xyz</source>
-        <translation type="vanished">Получение ключа от cma.henkaku.xyz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="459"/>
@@ -150,32 +144,17 @@ Input this PIN on PS Vita: %2</source>
 2. Select &quot;PC -&gt; PS Vita System&quot; -&gt; &quot;Applications&quot; -&gt; &quot;PS Vita&quot;.
 3. Transfer &quot;h-encore&quot; to your PS Vita.
 4. Run &quot;h-encore&quot; and... Yay, that&apos;s it!</source>
-        <translation>Все готово, теперь следуйте этим шагам на вашей PS Vita:
-1. Запустите Управление данными и подключите Vita к компьютеру.
-2. Выберите &quot;Компьютер -&gt; Система PS Vita&quot; -&gt; &quot;Приложения&quot; -&gt; &quot;PS Vita&quot;.
-3. Перенесите &quot;h-encore&quot; на вашу PS Vita.
-4. Запустите &quot;h-encore&quot; и... Ура, все работает!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="510"/>
         <source>Trimming package</source>
-        <translation>Обрезается h-encore</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../package.cc" line="588"/>
         <source>Createing psvimg&apos;s</source>
-        <translation>Создание psvimg</translation>
-    </message>
-    <message>
-        <source>Cannot get backup key from your AID.
-Please check your network connection!</source>
-        <translation type="vanished">Невозможно получить ключ. Проверьте подключение к интернету.</translation>
-    </message>
-    <message>
-        <source>Fetched backup key.
-Click button to START!</source>
-        <translation type="vanished">Ключ получен
-        	нажмите Начать!</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -183,18 +162,18 @@ Click button to START!</source>
     <message>
         <location filename="../vita.cc" line="445"/>
         <source>Waiting for connection to PS Vita...</source>
-        <translation>Ожидание подключения к PS Vita...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../vita.cc" line="448"/>
         <location filename="../vita.cc" line="450"/>
         <source>Connected to PS Vita</source>
-        <translation>PS Vita подключена</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../vita.cc" line="448"/>
         <source>Waiting for account ID</source>
-        <translation>Ожидание AID</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -203,12 +182,12 @@ Click button to START!</source>
         <location filename="../finalhe.cc" line="63"/>
         <location filename="../finalhe.cc" line="350"/>
         <source>English</source>
-        <translation>Английский</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../finalhe.cc" line="78"/>
         <source>LANGUAGE</source>
-        <translation>Русский</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

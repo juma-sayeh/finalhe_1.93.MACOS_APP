@@ -17,8 +17,10 @@ win32-msvc* {
     libxml2.subdir = deps/libxml2
     libusb.subdir = deps/libusb
     vitamtp.depends = iconv libxml2 libusb
-    SUBDIRS += zlib
-    zlib.subdir = deps/zlib
-    psvimg.depends += zlib
-    pkg.depends += zlib
+    !CONFIG(static) {
+        SUBDIRS += zlib
+        zlib.subdir = deps/zlib
+        psvimg.depends += zlib
+        pkg.depends += zlib
+    }
 }

@@ -1,0 +1,589 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C SOURCE FILE Test Iconv_IS_BUILT_IN failed with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_95446/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_95446.dir/build.make CMakeFiles/cmTC_95446.dir/build
+Building C object CMakeFiles/cmTC_95446.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DIconv_IS_BUILT_IN  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.0 -MD -MT CMakeFiles/cmTC_95446.dir/src.c.o -MF CMakeFiles/cmTC_95446.dir/src.c.o.d -o CMakeFiles/cmTC_95446.dir/src.c.o -c /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_95446
+/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95446.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_95446.dir/src.c.o -o cmTC_95446 
+Undefined symbols for architecture arm64:
+  "_iconv", referenced from:
+      _main in src.c.o
+  "_iconv_close", referenced from:
+      _main in src.c.o
+  "_iconv_open", referenced from:
+      _main in src.c.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_95446] Error 1
+make: *** [cmTC_95446/fast] Error 2
+
+
+Source file was:
+
+      #include <stddef.h>
+      #include <iconv.h>
+      int main() {
+        char *a, *b;
+        size_t i, j;
+        iconv_t ic;
+        ic = iconv_open("to", "from");
+        iconv(ic, &a, &i, &b, &j);
+        iconv_close(ic);
+      }
+      
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_21230/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_21230.dir/build.make CMakeFiles/cmTC_21230.dir/build
+Building C object CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -munwind-tables -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5 -dependency-file CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include -internal-externc-isystem /usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.5 (clang-1205.0.22.11) default target x86_64-apple-darwin20.5.0
+ignoring nonexistent directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include
+ /Library/Developer/CommandLineTools/usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_21230
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21230.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o -o cmTC_21230 
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 0.0.0 -o cmTC_21230 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_21230.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 13:09:02 May 28 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_21230] Error 1
+make: *** [cmTC_21230/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9ea18/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9ea18.dir/build.make CMakeFiles/cmTC_9ea18.dir/build
+Building C object CMakeFiles/cmTC_9ea18.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0 -MD -MT CMakeFiles/cmTC_9ea18.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_9ea18.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_9ea18.dir/testCCompiler.c.o -c /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_9ea18
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ea18.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9ea18.dir/testCCompiler.c.o -o cmTC_9ea18 
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_9ea18] Error 1
+make: *** [cmTC_9ea18/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a67b4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a67b4.dir/build.make CMakeFiles/cmTC_a67b4.dir/build
+Building C object CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -munwind-tables -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5 -dependency-file CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include -internal-externc-isystem /usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.5 (clang-1205.0.22.11) default target x86_64-apple-darwin20.5.0
+ignoring nonexistent directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include
+ /Library/Developer/CommandLineTools/usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_a67b4
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a67b4.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o -o cmTC_a67b4 
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 0.0.0 -o cmTC_a67b4 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a67b4.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 13:09:02 May 28 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_a67b4] Error 1
+make: *** [cmTC_a67b4/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_44ace/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_44ace.dir/build.make CMakeFiles/cmTC_44ace.dir/build
+Building C object CMakeFiles/cmTC_44ace.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0 -MD -MT CMakeFiles/cmTC_44ace.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_44ace.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_44ace.dir/testCCompiler.c.o -c /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_44ace
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44ace.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_44ace.dir/testCCompiler.c.o -o cmTC_44ace 
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_44ace] Error 1
+make: *** [cmTC_44ace/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_10bde/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_10bde.dir/build.make CMakeFiles/cmTC_10bde.dir/build
+Building C object CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -munwind-tables -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5 -dependency-file CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include -internal-externc-isystem /usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.5 (clang-1205.0.22.11) default target x86_64-apple-darwin20.5.0
+ignoring nonexistent directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include
+ /Library/Developer/CommandLineTools/usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_10bde
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10bde.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o -o cmTC_10bde 
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 0.0.0 -o cmTC_10bde -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_10bde.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 13:09:02 May 28 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_10bde] Error 1
+make: *** [cmTC_10bde/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1b12f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1b12f.dir/build.make CMakeFiles/cmTC_1b12f.dir/build
+Building C object CMakeFiles/cmTC_1b12f.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0 -MD -MT CMakeFiles/cmTC_1b12f.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_1b12f.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_1b12f.dir/testCCompiler.c.o -c /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_1b12f
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b12f.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1b12f.dir/testCCompiler.c.o -o cmTC_1b12f 
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_1b12f] Error 1
+make: *** [cmTC_1b12f/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c015/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4c015.dir/build.make CMakeFiles/cmTC_4c015.dir/build
+Building C object CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -munwind-tables -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5 -dependency-file CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include -internal-externc-isystem /usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.5 (clang-1205.0.22.11) default target x86_64-apple-darwin20.5.0
+ignoring nonexistent directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include
+ /Library/Developer/CommandLineTools/usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_4c015
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c015.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o -o cmTC_4c015 
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 0.0.0 -o cmTC_4c015 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4c015.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 13:09:02 May 28 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_4c015] Error 1
+make: *** [cmTC_4c015/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_db5d6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_db5d6.dir/build.make CMakeFiles/cmTC_db5d6.dir/build
+Building C object CMakeFiles/cmTC_db5d6.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0 -MD -MT CMakeFiles/cmTC_db5d6.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_db5d6.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_db5d6.dir/testCCompiler.c.o -c /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_db5d6
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db5d6.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_db5d6.dir/testCCompiler.c.o -o cmTC_db5d6 
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_db5d6] Error 1
+make: *** [cmTC_db5d6/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6e51c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6e51c.dir/build.make CMakeFiles/cmTC_6e51c.dir/build
+Building C object CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -munwind-tables -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5 -dependency-file CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include -internal-externc-isystem /usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.5 (clang-1205.0.22.11) default target x86_64-apple-darwin20.5.0
+ignoring nonexistent directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include
+ /Library/Developer/CommandLineTools/usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_6e51c
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e51c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o -o cmTC_6e51c 
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 0.0.0 -o cmTC_6e51c -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_6e51c.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 13:09:02 May 28 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_6e51c] Error 1
+make: *** [cmTC_6e51c/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cb415/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cb415.dir/build.make CMakeFiles/cmTC_cb415.dir/build
+Building C object CMakeFiles/cmTC_cb415.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0 -MD -MT CMakeFiles/cmTC_cb415.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_cb415.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_cb415.dir/testCCompiler.c.o -c /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_cb415
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb415.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cb415.dir/testCCompiler.c.o -o cmTC_cb415 
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_cb415] Error 1
+make: *** [cmTC_cb415/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2dd23/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2dd23.dir/build.make CMakeFiles/cmTC_2dd23.dir/build
+Building C object CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx12.0.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -fno-rounding-math -munwind-tables -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -debugger-tuning=lldb -target-linker-version 650.9 -v -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5 -dependency-file CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include -internal-externc-isystem /usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.23.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.5 (clang-1205.0.22.11) default target x86_64-apple-darwin20.5.0
+ignoring nonexistent directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include
+ /Library/Developer/CommandLineTools/usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_2dd23
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dd23.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o -o cmTC_2dd23 
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 12.0.0 0.0.0 -o cmTC_2dd23 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_2dd23.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 13:09:02 May 28 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_2dd23] Error 1
+make: *** [cmTC_2dd23/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b85b5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b85b5.dir/build.make CMakeFiles/cmTC_b85b5.dir/build
+Building C object CMakeFiles/cmTC_b85b5.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -mmacosx-version-min=12.0 -MD -MT CMakeFiles/cmTC_b85b5.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_b85b5.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_b85b5.dir/testCCompiler.c.o -c /Users/jumasayeh/Downloads/finalhe-master/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b85b5
+/usr/local/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b85b5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -mmacosx-version-min=12.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b85b5.dir/testCCompiler.c.o -o cmTC_b85b5 
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_b85b5] Error 1
+make: *** [cmTC_b85b5/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+

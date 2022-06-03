@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libpsvimg.a CMakeFiles/psvimg.dir/backup.c.o CMakeFiles/psvimg.dir/utils.c.o "CMakeFiles/psvimg.dir/psvimg-create.c.o"
+/Library/Developer/CommandLineTools/usr/bin/ranlib libpsvimg.a

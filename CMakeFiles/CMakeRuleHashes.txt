@@ -1,0 +1,26 @@
+# Hashes of file build rules.
+658f9da1b0b0390398cddd7967d65767 src/CMakeFiles/FinalHE_autogen
+d10b3aa779d1d3296ef652aae56a412b src/cs_CZ.qm
+1ed4e177e330be9837b8bce181743147 src/de_DE.qm
+96cbda21e75c1b63dfd37ec8bc91db40 src/es_ES.qm
+a50919c826a0a4a618c721e2645928f2 src/fr_FR.qm
+e9de97659ded42c302ff749e01415d4a src/it_IT.qm
+54fb0d375fdd00acdc9b717a13d96b0b src/ja_JP.qm
+460f6e23ba17ca36a6361a9cbc052ca1 src/pt_BR.qm
+6e56a0a9a3e96a2a71aaeb9976edd6d8 src/qrc_finalhe.cpp
+2e2268e7e364f2665a14ac5d4dfa9001 src/ru_RU.qm
+4b3ffd98f8678791edfa71c9dbecc0ff src/tr_TR.qm
+95d2b36e3b17f5eb77baa6dae74438cb src/translations/cs_CZ.ts
+38ab92b48d7c9aa262f0478eb39e6ebe src/translations/de_DE.ts
+0bf0e60ab2d59820a94f3ec6504a42cb src/translations/es_ES.ts
+3b9505cf996e74daf6e461e6fc0ff9ac src/translations/fr_FR.ts
+0bbf58796790ec79e0bd06744a32167c src/translations/it_IT.ts
+7135fa8d50b064d4936af5346e0dc8b6 src/translations/ja_JP.ts
+d3b1417c5ace35b26fc7221e20dacccb src/translations/pt_BR.ts
+ca9349e1160005f72cbf3f3d097f3fb9 src/translations/ru_RU.ts
+79c3a4ba570b372f13aa71f1142c9d3f src/translations/tr_TR.ts
+b6bb22b7207fd339defb46d4ee39b452 src/translations/zh_CN.ts
+7b432188462cdb6f1b3b15ac47e8c7bd src/translations/zh_TW.ts
+8ae1d14ac7270000323450c2240ac0b3 src/ui_finalhe.h
+3b0b02e6e695b8c0462f64e1a7ff6dc6 src/zh_CN.qm
+10306d8785fead4c3c91981276591927 src/zh_TW.qm

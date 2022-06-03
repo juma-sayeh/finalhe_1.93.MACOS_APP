@@ -28,6 +28,7 @@ Downloader::Downloader(QObject *obj_parent): QObject(obj_parent) {
 
 void Downloader::doDownload(const QUrl &url, QFile *fileToWrite) {
     QNetworkRequest request(url);
+    request.setAttribute(QNetworkRequest::FollowRedirectsAttribute, QVariant(true));
     QNetworkReply *reply = manager.get(request);
     RequestFile *rf = new RequestFile;
     rf->reply = reply;
